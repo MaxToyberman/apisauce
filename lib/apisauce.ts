@@ -80,8 +80,8 @@ const isInvalidConfig = anyPass([
   isNil,
   isEmpty,
   complement(has('baseURL')),
-  complement(propIs(String, 'baseURL')),
-  propSatisfies(isEmpty, 'baseURL')
+  complement(propIs(String, 'baseURL'))
+ // propSatisfies(isEmpty, 'baseURL')
 ])
 
 /**
